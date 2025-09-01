@@ -1,0 +1,26 @@
+{
+  "timeZone": "Europe/Brussels",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/drive.readonly",
+    "https://www.googleapis.com/auth/script.locale" 
+  ],
+  "dependencies": {},
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "addOns": {
+    "common": {
+      "name": "Map Info Viewer",
+      "logoUrl": "https://www.gstatic.com/images/icons/material/system/1x/folder_black_24dp.png",
+      "layoutProperties": {
+        "primaryColor": "#3367d6"
+      },
+      "useLocaleFromApp": true
+    },
+    "drive": {
+      "homepageTrigger": {
+        "runFunction": "onDriveContextOpen",
+        "enabled": true
+      }
+    }
+  }
+}
